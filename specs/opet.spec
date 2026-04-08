@@ -36,7 +36,6 @@ tags:TC_OPT_003
 * Sistem kullanıcıya talep dökümünü dataGrid formatında yansıtır.
 * Plaka adına yeni bir cihaz talebi kayıtlandığı teyit edilir.
 
-
 SanalID Başvurusu - Otofilo Var - HGS Var
 ----------------
 tags:TC_OPT_004
