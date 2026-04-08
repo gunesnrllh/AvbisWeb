@@ -1,6 +1,5 @@
 Specification Heading
 =====================
-
 Otobil Kart Başvurusu - Otofilo Yok - HGS Yok
 ----------------
 tags:TC_OPT_001
