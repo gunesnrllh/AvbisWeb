@@ -1,0 +1,235 @@
+[
+  {
+    "key": "girisYapBtn",
+    "value": "btnLogin",
+    "type": "id"
+  },
+  {
+    "key": "usernameInput",
+    "value": "UsernameTextBox",
+    "type": "id"
+  },
+  {
+    "key": "passwprdInput",
+    "value": "PasswordTextBox",
+    "type": "id"
+  },
+  {
+    "key": "guvenlikKoduInput",
+    "value": "txtCaptcha",
+    "type": "id"
+  },
+  {
+    "key": "cihazTalebiNavigation",
+    "value": "NavigationMenut48",
+    "type": "id"
+  },
+  {
+    "key": "otobilCihazNavigation",
+    "value": "NavigationMenut49",
+    "type": "id"
+  },
+  {
+    "key": "girisTab",
+    "value": "NavigationMenut0",
+    "type": "id"
+  },
+  {
+    "key": "filoSecimiTab",
+    "value": "NavigationMenut2",
+    "type": "id"
+  },
+  {
+    "key": "filoIsimInput",
+    "value": "MainContent_txtFiloName",
+    "type": "id"
+  },{
+    "key": "filoListeleBtn",
+    "value": "MainContent_btnList",
+    "type": "id"
+  },{
+    "key": "opetFiloSecim",
+    "value": "option[value='OPET PETROLCULUK AS-[100001]']",
+    "type": "css"
+  },{
+    "key": "isaretlileriSecBtn",
+    "value": "MainContent_btnSelect",
+    "type": "id"
+  },
+  {
+    "key": "filoBaslik",
+    "value": "MainContent_txtFilo",
+    "type": "id"
+  },
+  {
+    "key": "grupList",
+    "value": "MainContent_ddlGroups",
+    "type": "id"
+  },
+  {
+    "key": "aaaGrup",
+    "value": "option[value='54474']",
+    "type": "css"
+  },
+  {
+    "key": "basvuruSahibiInput",
+    "value": "MainContent_txtAd",
+    "type": "id"
+  },
+  {
+    "key": "telNoInput",
+    "value": "MainContent_txtPhone",
+    "type": "id"
+  },
+  {
+    "key": "ceptelNoInput",
+    "value": "MainContent_txtGSM",
+    "type": "id"
+  },
+  {
+    "key": "adresInput",
+    "value": "MainContent_txtAddress",
+    "type": "id"
+  },
+  {
+    "key": "adresSehirList",
+    "value": "MainContent_ddlOtherAddressCity",
+    "type": "id"
+  },
+  {
+    "key": "ankaraSecim",
+    "value": "option[value='7']",
+    "type": "css"
+  },
+  {
+    "key": "adresIlceList",
+    "value": "MainContent_ddlOtherAddressDistrict",
+    "type": "id"
+  },
+  {
+    "key": "akyurtSecim",
+    "value": "option[value='499']",
+    "type": "css"
+  },
+  {
+    "key": "aracTipi",
+    "value": "MainContent_ddlVehicleTypes",
+    "type": "id"
+  },
+  {
+    "key": "kucukOtomobil",
+    "value": "option[value='30']",
+    "type": "css"
+  },
+  {
+    "key": "plakaInput",
+    "value": "MainContent_txtPlate",
+    "type": "id"
+  },
+  {
+    "key": "aracMarka",
+    "value": "MainContent_ddlVehicleMakes",
+    "type": "id"
+  },
+  {
+    "key": "aracMarkaSecim",
+    "value": "option[value='137']",
+    "type": "css"
+  },
+  {
+    "key": "aracModel",
+    "value": "MainContent_ddlVehicleModels",
+    "type": "id"
+  },
+  {
+    "key": "aracModelSecim",
+    "value": "option[value='698']",
+    "type": "css"
+  },
+  {
+    "key": "aracYil",
+    "value": "MainContent_ddlYear",
+    "type": "id"
+  },
+  {
+    "key": "aracYilSecim",
+    "value": "option[value='2010']",
+    "type": "css"
+  },
+  {
+    "key": "temelYakit",
+    "value": "MainContent_ddlFuelType",
+    "type": "id"
+  },
+  {
+    "key": "temelYakitSecim",
+    "value": "option[value='4']",
+    "type": "css"
+  },
+  {
+    "key": "1.asamaPlakaEkle",
+    "value": "MainContent_btnPlate",
+    "type": "id"
+  },
+  {
+    "key": "eklenenAracTablo",
+    "value": "MainContent_grdPlates",
+    "type": "id"
+  },
+
+  {
+    "key": "plakaDogrulaCheckBox",
+    "value": "MainContent_chkApprove",
+    "type": "id"
+  },
+  {
+    "key": "talepBasariliMesaj",
+    "value": "MainContent_errorLabel",
+    "type": "id"
+  },
+  {
+    "key": "hgsIstiyorumCheckBox",
+    "value": "MainContent_chkFilopetHgs",
+    "type": "id"
+  },
+  {
+    "key": "hgsList",
+    "value": "MainContent_ddlHgsCihazTuru",
+    "type": "id"
+  },
+  {
+    "key": "hgsEtiket",
+    "value": "option[value='1']",
+    "type": "css"
+  },
+  {
+    "key": "aracSinifi",
+    "value": "MainContent_ddlAracSinifi",
+    "type": "id"
+  },
+  {
+    "key": "arac1Sinif",
+    "value": "option[value='1']",
+    "type": "css"
+  },
+  {
+    "key": "ruhsatNoInput",
+    "value": "MainContent_txtAracRuhsatNumarasi",
+    "type": "id"
+  },
+  {
+    "key": "otofiloCheckBox",
+    "value": "MainContent_chkFilopet",
+    "type": "id"
+  },
+  {
+    "key": "otoFiloCihazTuru",
+    "value": "MainContent_chkFilopet",
+    "type": "id"
+  },
+  {
+    "key": "otoFiloCihazTuruSecim",
+    "value": "option[value='5']",
+    "type": "css"
+  }
+]

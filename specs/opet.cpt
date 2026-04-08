@@ -1,0 +1,66 @@
+Created by nurullahgunes on 25.12.2025
+
+This is a concept file with following syntax for each concept.
+# <username> ve <password> bilgileriyle giris yapilir
+* <username> textini "usernameInput" elemente yaz
+* <password> textini "passwprdInput" elemente yaz
+* "AYVA" textini "guvenlikKoduInput" elemente yaz
+* "girisYapBtn" elementine tikla
+
+# Kullanici islem yapacagi filoyu isaretler
+* "girisTab" elementine tikla
+* "filoSecimiTab" elementine tikla
+* "Opet" textini "filoIsimInput" Alanina Yaz
+* "filoListeleBtn" elementine tikla
+* "opetFiloSecim" elementine tikla
+* "isaretlileriSecBtn" elementine tikla
+
+# Sistem kullanıcıyı Otobil Cihaz Talebi ekranına yönlendirir.
+* "cihazTalebiNavigation" elementine tikla
+* "otobilCihazNavigation" elementine tikla
+
+# Kullanici basvuru bilgilerini doldurur.
+* "grupList" elementine tikla
+* "aaaGrup" elementine tikla
+* "test user" textini "basvuruSahibiInput" Alanina Yaz
+* "5453715731" textini "telNoInput" Alanina Yaz
+* "5453715731" textini "ceptelNoInput" Alanina Yaz
+* "ankara" textini "adresInput" Alanina Yaz
+* "adresSehirList" elementine tikla
+* "ankaraSecim" elementine tikla
+* "adresIlceList" elementine tikla
+* "akyurtSecim" elementine tikla
+* "aracTipi" elementine tikla
+* "kucukOtomobil" elementine tikla
+* "34cbk782" textini "plakaInput" Alanina Yaz
+* "aracMarka" elementine tikla
+* "aracMarkaSecim" elementine tikla
+* "aracModel" elementine tikla
+* "aracModelSecim" elementine tikla
+* "aracYil" elementine tikla
+* "aracYilSecim" elementine tikla
+* "temelYakit" elementine tikla
+* "temelYakitSecim" elementine tikla
+
+
+# Hgs bilgileri doldurulur
+* "hgsIstiyorumCheckBox" elementine tikla
+* "hgsList" elementine tikla
+* "hgsEtiket" elementine tikla
+* "aracSinifi" elementine tikla
+* "arac1Sinif" elementine tikla
+* "ab123456" textini "ruhsatNoInput" Alanina Yaz
+
+# Otofilo bilgileri doldurulur
+* "otofiloCheckBox" elementine tikla
+* "otoFiloCihazTuruSecim" elementine tikla
+
+# Sistem kullanıcıya talep dökümünü dataGrid formatında yansıtır.
+* "asamaPlakaEkle" elementine tikla
+* "eklenenAracTablo" elementini kontrol et
+* "plakaDogrulaCheckBox" Elementi var mı kontrol et varsa tikla
+
+# Plaka adına yeni bir cihaz talebi kayıtlandığı teyit edilir.
+* "talepBasariliMesaj" elementini kontrol et
+
+
