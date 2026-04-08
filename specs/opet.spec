@@ -47,4 +47,3 @@ tags:TC_OPT_004
 * Otofilo bilgileri doldurulur
 * Sistem kullanıcıya talep dökümünü dataGrid formatında yansıtır.
 * Plaka adına yeni bir cihaz talebi kayıtlandığı teyit edilir.
-
