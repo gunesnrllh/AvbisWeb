@@ -50,15 +50,22 @@ This is a concept file with following syntax for each concept.
 
 # Hgs bilgileri doldurulur
 * "hgsIstiyorumCheckBox" elementine tikla
+* "2" saniye bekle
 * "hgsList" elementine tikla
+* "2" saniye bekle
 * "hgsEtiket" elementine tikla
+* "2" saniye bekle
 * "aracSinifi" elementine tikla
+* "2" saniye bekle
 * "arac1Sinif" elementine tikla
+* "2" saniye bekle
 * "ab123456" textini "ruhsatNoInput" Alanina Yaz
 
 # Otofilo bilgileri doldurulur
 * "otofiloCheckBox" elementine tikla
+* "2" saniye bekle
 * "otoFiloCihazTuruSecim" elementine tikla
+* "2" saniye bekle
 
 # Sistem kullanıcıya talep dökümünü dataGrid formatında yansıtır.
 * "1.asamaPlakaEkle" elementine tikla
@@ -69,6 +76,7 @@ This is a concept file with following syntax for each concept.
 
 # Plaka adına yeni bir cihaz talebi kayıtlandığı teyit edilir.
 * "basvuruKaydet" elementine tikla
+* "2" saniye bekle
 * "talepBasariliMesaj" elementini kontrol et
 
 
