@@ -68,6 +68,7 @@ This is a concept file with following syntax for each concept.
 * "3" saniye bekle
 
 # Plaka adına yeni bir cihaz talebi kayıtlandığı teyit edilir.
+* "basvuruKaydet" elementine tikla
 * "talepBasariliMesaj" elementini kontrol et
 
 

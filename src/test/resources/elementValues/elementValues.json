@@ -172,6 +172,11 @@
     "type": "id"
   },
   {
+    "key": "basvuruKaydet",
+    "value": "MainContent_btnSave",
+    "type": "id"
+  },
+  {
     "key": "eklenenAracTablo",
     "value": "MainContent_grdPlates",
     "type": "id"
