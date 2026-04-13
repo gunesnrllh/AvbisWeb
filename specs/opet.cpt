@@ -9,14 +9,17 @@ This is a concept file with following syntax for each concept.
 
 # Kullanici islem yapacagi filoyu isaretler
 * "girisTab" elementine tikla
+* "2" saniye bekle
 * "filoSecimiTab" elementine tikla
 * "Opet" textini "filoIsimInput" Alanina Yaz
 * "filoListeleBtn" elementine tikla
 * "opetFiloSecim" elementine tikla
 * "isaretlileriSecBtn" elementine tikla
+* "3" saniye bekle
 
 # Sistem kullanıcıyı Otobil Cihaz Talebi ekranına yönlendirir.
 * "cihazTalebiNavigation" elementine tikla
+* "2" saniye bekle
 * "otobilCihazNavigation" elementine tikla
 
 # Kullanici basvuru bilgilerini doldurur.
@@ -56,7 +59,7 @@ This is a concept file with following syntax for each concept.
 * "otoFiloCihazTuruSecim" elementine tikla
 
 # Sistem kullanıcıya talep dökümünü dataGrid formatında yansıtır.
-* "asamaPlakaEkle" elementine tikla
+* "1.asamaPlakaEkle" elementine tikla
 * "eklenenAracTablo" elementini kontrol et
 * "plakaDogrulaCheckBox" Elementi var mı kontrol et varsa tikla
 

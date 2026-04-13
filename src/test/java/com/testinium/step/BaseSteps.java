@@ -149,6 +149,7 @@ public class BaseSteps extends BaseTest {
     public void clickElementMethod(String key) {
         if (!key.isEmpty()) {
             clickElement(findElement(key));
+            waitBySeconds(1);
             logger.info(" clicked on element " + key);
         }
     }
