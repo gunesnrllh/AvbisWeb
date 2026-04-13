@@ -6,6 +6,7 @@ import com.thoughtworks.gauge.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.*;
@@ -517,8 +518,30 @@ public class BaseSteps extends BaseTest {
         findElement(element).sendKeys("emre"+randomNumber+"@gmail.com");
     }
 
-
+    @Step({"<key> dropdownindan <value> degerini sec"})
+    public void selectFromDropdown(String key, String value) {
+        WebElement dropdownElement = findElement(key);
+        Select dropdown = new Select(dropdownElement);
+        try {
+            dropdown.selectByVisibleText(value);
+            logger.info(key + " dropdownindan '" + value + "' secildi.");
+        } catch (Exception e) {
+            try {
+                dropdown.selectByValue(value);
+                logger.info(key + " dropdownindan value='" + value + "' secildi.");
+            } catch (Exception ex) {
+                logger.error(key + " dropdownindan '" + value + "' secilemedi: " + ex.getMessage());
+                throw ex;
+            }
+        }
     }
 
-
-
+    @Step({"<key> dropdownindan index <index> sec"})
+    public void selectFromDropdownByIndex(String key, String index) {
+        WebElement dropdownElement = findElement(key);
+        Select dropdown = new Select(dropdownElement);
+        int indexInt = Integer.parseInt(index);
+        dropdown.selectByIndex(indexInt);
+        logger.info(key + " dropdownindan index " + index + " secildi.");
+    }
+}

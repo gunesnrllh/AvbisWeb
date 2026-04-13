@@ -24,26 +24,28 @@ This is a concept file with following syntax for each concept.
 
 # Kullanici basvuru bilgilerini doldurur.
 * "grupList" elementine tikla
+* "1" saniye bekle
 * "aaaGrup" elementine tikla
+* "1" saniye bekle
 * "test user" textini "basvuruSahibiInput" Alanina Yaz
 * "5453715731" textini "telNoInput" Alanina Yaz
 * "5453715731" textini "ceptelNoInput" Alanina Yaz
 * "ankara" textini "adresInput" Alanina Yaz
-* "adresSehirList" elementine tikla
-* "ankaraSecim" elementine tikla
-* "adresIlceList" elementine tikla
-* "akyurtSecim" elementine tikla
-* "aracTipi" elementine tikla
-* "kucukOtomobil" elementine tikla
+* "adresSehirList" dropdownindan index "7" sec
+* "2" saniye bekle
+* "adresIlceList" dropdownindan index "1" sec
+* "3" saniye bekle
+* "aracTipi" dropdownindan index "1" sec
+* "2" saniye bekle
 * "34cbk782" textini "plakaInput" Alanina Yaz
-* "aracMarka" elementine tikla
-* "aracMarkaSecim" elementine tikla
-* "aracModel" elementine tikla
-* "aracModelSecim" elementine tikla
-* "aracYil" elementine tikla
-* "aracYilSecim" elementine tikla
-* "temelYakit" elementine tikla
-* "temelYakitSecim" elementine tikla
+* "aracMarka" dropdownindan index "1" sec
+* "2" saniye bekle
+* "aracModel" dropdownindan index "1" sec
+* "2" saniye bekle
+* "aracYil" dropdownindan index "1" sec
+* "2" saniye bekle
+* "temelYakit" dropdownindan index "1" sec
+* "2" saniye bekle
 
 
 # Hgs bilgileri doldurulur
@@ -60,8 +62,10 @@ This is a concept file with following syntax for each concept.
 
 # Sistem kullanıcıya talep dökümünü dataGrid formatında yansıtır.
 * "1.asamaPlakaEkle" elementine tikla
+* "3" saniye bekle
 * "eklenenAracTablo" elementini kontrol et
 * "plakaDogrulaCheckBox" Elementi var mı kontrol et varsa tikla
+* "3" saniye bekle
 
 # Plaka adına yeni bir cihaz talebi kayıtlandığı teyit edilir.
 * "talepBasariliMesaj" elementini kontrol et
