@@ -544,4 +544,29 @@ public class BaseSteps extends BaseTest {
         dropdown.selectByIndex(indexInt);
         logger.info(key + " dropdownindan index " + index + " secildi.");
     }
+
+
+    @Step({"Wait for page to load", "Sayfanin yuklenmesini bekle"})
+    public void waitForPageLoad() {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(webDriver -> ((JavascriptExecutor) webDriver)
+                .executeScript("return document.readyState").equals("complete"));
+        logger.info("Sayfa yuklendi.");
+    }
+
+    @Step({"Wait for element <key> to be clickable", "<key> elementinin tiklanabilir olmasini bekle"})
+    public void waitForElementToBeClickable(String key) {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        By locator = getElementInfoToBy(findElementInfoByKey(key));
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+        logger.info(key + " elementi tiklanabilir hale geldi.");
+    }
+
+    @Step({"Wait for element <key> to be visible", "<key> elementinin gorunur olmasini bekle"})
+    public void waitForElementToBeVisible(String key) {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        By locator = getElementInfoToBy(findElementInfoByKey(key));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        logger.info(key + " elementi gorunur hale geldi.");
+    }
 }

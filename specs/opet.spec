@@ -31,7 +31,6 @@ tags:TC_OPT_003
 * Kullanici islem yapacagi filoyu isaretler
 * Sistem kullanıcıyı Otobil Cihaz Talebi ekranına yönlendirir.
 * Kullanici basvuru bilgilerini doldurur.
-* Otofilo bilgileri doldurulur
 * Sistem kullanıcıya talep dökümünü dataGrid formatında yansıtır.
 * Plaka adına yeni bir cihaz talebi kayıtlandığı teyit edilir.
 
@@ -43,6 +42,6 @@ tags:TC_OPT_004
 * Kullanici islem yapacagi filoyu isaretler
 * Sistem kullanıcıyı Otobil Cihaz Talebi ekranına yönlendirir.
 * Kullanici basvuru bilgilerini doldurur.
-* Otofilo bilgileri doldurulur
+* Hgs bilgileri doldurulur
 * Sistem kullanıcıya talep dökümünü dataGrid formatında yansıtır.
 * Plaka adına yeni bir cihaz talebi kayıtlandığı teyit edilir.
