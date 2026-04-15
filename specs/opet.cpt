@@ -28,11 +28,16 @@ This is a concept file with following syntax for each concept.
 * "grupList" elementine tikla
 * "aaaGrup" elementinin tiklanabilir olmasini bekle
 * "aaaGrup" elementine tikla
+* Sayfanin yuklenmesini bekle
+* "basvuruSahibiInput" elementinin gorunur olmasini bekle
 * "test user" textini "basvuruSahibiInput" Alanina Yaz
+* "telNoInput" elementinin gorunur olmasini bekle
 * "5453715731" textini "telNoInput" Alanina Yaz
-* "2" saniye bekle
+* Sayfanin yuklenmesini bekle
+* "ceptelNoInput" elementinin gorunur olmasini bekle
 * "5453715731" textini "ceptelNoInput" Alanina Yaz
-* "2" saniye bekle
+* Sayfanin yuklenmesini bekle
+* "adresInput" elementinin gorunur olmasini bekle
 * "ankara" textini "adresInput" Alanina Yaz
 * "adresSehirList" dropdownindan index "7" sec
 * Sayfanin yuklenmesini bekle

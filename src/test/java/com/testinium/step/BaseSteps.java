@@ -351,10 +351,13 @@ public class BaseSteps extends BaseTest {
             "<text> textini <key> Alanina Yaz"})
     public void ssendKeys1(String text, String key) {
         By infoParam = getElementInfoToBy(findElementInfoByKey(key));
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOfElementLocated(infoParam));
+        wait.until(ExpectedConditions.elementToBeClickable(infoParam));
         if (!key.equals("")) {
-            findElement(key).sendKeys(text);
+            WebElement element = findElement(key);
+            element.clear();
+            element.sendKeys(text);
             logger.info(key + " elementine " + text + " texti yazıldı.");
         }
     }
