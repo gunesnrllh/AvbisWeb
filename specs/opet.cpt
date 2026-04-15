@@ -30,7 +30,9 @@ This is a concept file with following syntax for each concept.
 * "aaaGrup" elementine tikla
 * "test user" textini "basvuruSahibiInput" Alanina Yaz
 * "5453715731" textini "telNoInput" Alanina Yaz
+* "2" saniye bekle
 * "5453715731" textini "ceptelNoInput" Alanina Yaz
+* "2" saniye bekle
 * "ankara" textini "adresInput" Alanina Yaz
 * "adresSehirList" dropdownindan index "7" sec
 * Sayfanin yuklenmesini bekle
