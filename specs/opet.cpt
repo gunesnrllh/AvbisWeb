@@ -28,8 +28,11 @@ This is a concept file with following syntax for each concept.
 * "aaaGrup" elementine tikla
 * "1" saniye bekle
 * "test user" textini "basvuruSahibiInput" Alanina Yaz
+* "1" saniye bekle
 * "5453715731" textini "telNoInput" Alanina Yaz
+* "1" saniye bekle
 * "5453715731" textini "ceptelNoInput" Alanina Yaz
+* "1" saniye bekle
 * "ankara" textini "adresInput" Alanina Yaz
 * "adresSehirList" dropdownindan index "7" sec
 * "2" saniye bekle
@@ -46,15 +49,17 @@ This is a concept file with following syntax for each concept.
 * "2" saniye bekle
 * "temelYakit" dropdownindan index "1" sec
 * "2" saniye bekle
+* "temelYakit" Elementi var mı kontrol et varsa tikla
+* "temelYakitSecim" Elementi var mı kontrol et varsa tikla
 
 
 # Hgs bilgileri doldurulur
 * "hgsIstiyorumCheckBox" elementine tikla
 * "2" saniye bekle
 * "hgsList" elementine tikla
+*"hgsList" dropdownindan index "1" sec
 * "2" saniye bekle
-* "hgsEtiket" elementine tikla
-* "2" saniye bekle
+'* "hgsEtiket" elementine tikla
 * "aracSinifi" elementine tikla
 * "2" saniye bekle
 * "arac1Sinif" elementine tikla
