@@ -2,9 +2,9 @@ Created by nurullahgunes on 25.12.2025
 
 This is a concept file with following syntax for each concept.
 # <username> ve <password> bilgileriyle giris yapilir
-* <username> textini "usernameInput" elemente yaz
-* <password> textini "passwprdInput" elemente yaz
-* "AYVA" textini "guvenlikKoduInput" elemente yaz
+* "usernameInput" elementine <username> değerini js ile yaz
+* "passwprdInput" elementine <password> değerini js ile yaz
+* "guvenlikKoduInput" elementine "AYVA" değerini js ile yaz
 * "girisYapBtn" elementine tikla
 
 # Kullanici islem yapacagi filoyu isaretler
@@ -12,7 +12,7 @@ This is a concept file with following syntax for each concept.
 * Sayfanin yuklenmesini bekle
 * "filoSecimiTab" elementinin tiklanabilir olmasini bekle
 * "filoSecimiTab" elementine tikla
-* "Opet" textini "filoIsimInput" Alanina Yaz
+* "filoIsimInput" elementine "Opet" değerini js ile yaz
 * "filoListeleBtn" elementine tikla
 * "opetFiloSecim" elementine tikla
 * "isaretlileriSecBtn" elementine tikla
@@ -30,22 +30,22 @@ This is a concept file with following syntax for each concept.
 * "aaaGrup" elementine tikla
 * Sayfanin yuklenmesini bekle
 * "basvuruSahibiInput" elementinin gorunur olmasini bekle
-* "test user" textini "basvuruSahibiInput" Alanina Yaz
+* "basvuruSahibiInput" elementine "test user" değerini js ile yaz
 * "telNoInput" elementinin gorunur olmasini bekle
-* "5453715731" textini "telNoInput" Alanina Yaz
+* "telNoInput" elementine "5453715731" değerini js ile yaz
 * Sayfanin yuklenmesini bekle
 * "ceptelNoInput" elementinin gorunur olmasini bekle
-* "5453715731" textini "ceptelNoInput" Alanina Yaz
+* "ceptelNoInput" elementine "5453715731" değerini js ile yaz
 * Sayfanin yuklenmesini bekle
 * "adresInput" elementinin gorunur olmasini bekle
-* "ankara" textini "adresInput" Alanina Yaz
+* "adresInput" elementine "ankara" değerini js ile yaz
 * "adresSehirList" dropdownindan index "7" sec
 * Sayfanin yuklenmesini bekle
 * "adresIlceList" dropdownindan index "1" sec
 * Sayfanin yuklenmesini bekle
 * "aracTipi" dropdownindan index "1" sec
 * Sayfanin yuklenmesini bekle
-* "34cbk782" textini "plakaInput" Alanina Yaz
+* "plakaInput" elementine "34cbk782" değerini js ile yaz
 * "aracMarka" dropdownindan index "1" sec
 * Sayfanin yuklenmesini bekle
 * "aracModel" dropdownindan index "1" sec
@@ -62,7 +62,7 @@ This is a concept file with following syntax for each concept.
 * Sayfanin yuklenmesini bekle
 * "aracSinifi" dropdownindan index "1" sec
 * Sayfanin yuklenmesini bekle
-* "ab123456" textini "ruhsatNoInput" Alanina Yaz
+* "ruhsatNoInput" elementine "ab123456" değerini js ile yaz
 
 # Otofilo bilgileri doldurulur
 * "otofiloCheckBox" elementine tikla
