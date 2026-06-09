@@ -1,0 +1,32 @@
+Created by nurullahgunes on 25.12.2025
+
+This is a concept file with following syntax for each concept.
+# <username> ve <password> bilgileriyle giris yapilir
+* <username> textini "usernameInput" elemente yaz
+* <password> textini "passwordInput" elemente yaz
+* "girisYapBtn" elementine tikla
+
+# Avbis ekranı genel kontrolleri yapilir
+* "anasayfaLogo" elementini kontrol et
+* "anasayfaUserName" elementini kontrol et
+
+# Dernek Bayi pul satis islemleri sayfasina ilerlenir
+* "pulSatisIslemleriBar" elementine tikla
+* "dernekBayiPulSatisBar" elementine tikla
+* "yeniPulSatisBtn" elementine tikla
+
+# Yeni pul satis penceresinde dernek secimi yapilir
+* "dernekBayiTip" elementine tikla
+* "dernekTip" elementine tikla
+* "kaynarciAvcilarDernek" elementine tikla
+
+# Pul seri no araligi <baslangicSeriNo> ve <bitisSeriNo> doldurulur
+* <baslangicSeriNo> textini "baslangicSeriNoInput" elemente yaz
+* <bitisSeriNo> textini "bitisSeriNoInput" elemente yaz
+
+# Toplam tutar kontrol edilirek kaydedilir
+* "toplamTutar" elementini kontrol et
+* "kaydetBtn" elementine tikla
+
+# Pul satisinin basari ile tamamlandigi goruntulenir
+* "pulSatisBasarili" elementini kontrol et

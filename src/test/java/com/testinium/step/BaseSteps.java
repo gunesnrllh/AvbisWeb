@@ -196,9 +196,15 @@ public class BaseSteps extends BaseTest {
     }
 
     @Step({"Go to <url> address", "<url> adresine git"})
-    public void goToUrl (String url) {
+    public void goToUrl(String url) {
+
+        if (!url.startsWith("http://") && !url.startsWith("https://")) {
+            url = "https://" + url;
+        }
+
+        logger.info("URL = [" + url + "]");
+
         driver.get(url);
-        logger.info(" Going to " + url);
     }
     @Step("<cookieValue> keyli cookie ekle")
     public void cookieAdded(String cookieValue) {
