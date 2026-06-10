@@ -99,7 +99,7 @@ public class BaseTest {
                     capabilities.setCapability("marionette", true);
                     capabilities.setCapability("key", System.getenv("key"));
 
-                    driver = new RemoteWebDriver(new URL("http://hub.testinium.io/wd/hub"), capabilities);
+                    driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
                     driver.manage().window().maximize();
                 }
         } catch (MalformedURLException e) {
