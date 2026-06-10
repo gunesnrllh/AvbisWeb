@@ -21,3 +21,12 @@ tags:TC_002
 * "avbistest.tarimorman.gov.tr/Avlak/Index" adresine git
 * "nurullah.gunes@testinium.com" ve "Testinium123" bilgileriyle giris yapilir
 * Avbis ekranı genel kontrolleri yapilir
+* idare Avci Islemleri sayfasina ilerlenir
+* Avci ekleme penceresi acilir
+* "10551136844" ve "1975-07-13" bilgileri ile sorgulama yapilir
+* Yeni avci kaydi tablosundaki zorunlu alanlar doldurulur
+* Vize bilgileri kontrol edilir
+* Silah ruhsat bilgisi eklenir
+* Harc bilgileri kontrol edilir
+* Sertifika bilgileri kontrol edilir
+* Vize bilgileri kontrol edilir

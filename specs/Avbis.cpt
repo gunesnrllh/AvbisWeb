@@ -30,3 +30,70 @@ This is a concept file with following syntax for each concept.
 
 # Pul satisinin basari ile tamamlandigi goruntulenir
 * "pulSatisBasarili" elementini kontrol et
+
+
+# idare Avci Islemleri sayfasina ilerlenir
+* "idareAvciIslemleri" elementine tikla
+* "avciBilgileri" elementine tikla
+
+# Avci ekleme penceresi acilir
+* "avciEkleBtn" elementine tikla
+* "avciSorgulaBaslik" elementini kontrol et
+
+# <tcNo> ve <dogumTarihi> bilgileri ile sorgulama yapilir
+* <tcNo> textini "avciTcNoInput" elemente yaz
+* <dogumTarihi> textini "avciDogumTarihiInput" elemente yaz
+* "avciSorgulaBtn" elementine tikla
+
+# Yeni avci kaydi tablosundaki zorunlu alanlar doldurulur
+* "yeniAvciKaydiForm" elementini kontrol et
+* "5453715731" textini "avciTelNoInput" elemente yaz
+* "avciMeslekTip" elementine tikla
+* "agYoneticisi" elementine tikla
+* "avciKanGrubuTip" elementine tikla
+* "aRhPKanGrubu" elementine tikla
+* "avciEgitimTip" elementine tikla
+* "yuksekLisans" elementine tikla
+* "avciIlceList" elementine tikla
+* "beypazariSecim" elementine tikla
+* "avciKaydetBtn" elementine tikla
+
+
+# Vize bilgileri kontrol edilir
+* "avciVizeBilgileri" elementine tikla
+* "vizeYenileBtn" elementine tikla
+
+# Silah ruhsat bilgisi eklenir
+* "silahBilgileriTab" elementine tikla
+* "yeniSilahBilgisiEkle" elementine tikla
+* "tasimaDurumTip" elementine tikla
+* "silahRuhsati" elementine tikla
+* "123456789" textini "avciRuhsatSayi" elemente yaz
+* "01.06.2026" textini "avciRuhsatAlisTarihi" elemente yaz
+* "01.07.2026" textini "avciRuhsatBitisTarihi" elemente yaz
+* "ruhsatKaydetBtn" elementine tikla
+
+# Harc bilgileri kontrol edilir
+* "harcBilgileriTab" elementine tikla
+* "avciHarcEkle" elementine tikla
+* "avciHarcSorgulaBtn" elementine tikla
+* "avciHarcKaydetBtn" elementine tikla
+* "avciHarcGeriBtn" elementine tikla
+
+# Sertifika bilgileri kontrol edilir
+* "sertifikaBilgileriTab" elementine tikla
+* "sertifikaBilgileriEkleBtn" elementine tikla
+* "sertifikaBilgileriAlinanYer" elementine tikla
+* "sertifikaBilgileriYurtici" elementine tikla
+* "testinium1" textini "sertifikaBilgileriKurumAdi" elemente yaz
+* "115" textini "sertifikaBilgileriSayi" elemente yaz
+* "02.06.2026" textini "sertifikaBilgileriTarih" elemente yaz
+* "sertifikaBilgileriKaydetBtn" elementine tikla
+
+
+# Avci Pul satisi <tcNumara> lu avci icin yapilir
+* "pulSatisIslemleriBar" elementine tikla
+* "ilSubePulSatis" elementine tikla
+* "avciPulSatisBtn" elementine tikla
+* <tcNumara> textini "avciPulSatisTcnoInput" elemente yaz
+* "avciPulSatisAraBtn" elementine tikla

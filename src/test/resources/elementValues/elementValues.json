@@ -80,54 +80,229 @@
     "type": "xpath"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "idareAvciIslemleri",
+    "value": "//span[text()='İdare Avcı İşlemleri']",
+    "type": "xpath"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "avciBilgileri",
+    "value": "//span[text()='Avcı Bilgileri']",
+    "type": "xpath"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "avciEkleBtn",
+    "value": "a[href*='/Avci/Ekle']",
+    "type": "css"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "avciSorgulaBaslik",
+    "value": "h4.form-section-title",
+    "type": "css"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "avciTcNoInput",
+    "value": "#Avci_TCKimlikNo",
+    "type": "css"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "avciDogumTarihiInput",
+    "value": "#Avci_DogumTarihi",
+    "type": "css"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "avciSorgulaBtn",
+    "value": "button[type='submit'].btn-primary",
+    "type": "css"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "yeniAvciKaydiForm",
+    "value": "//h4[contains(., 'Yeni Avcı Kaydı')]",
+    "type": "xpath"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "avciTelNoInput",
+    "value": "#Avci_TelefonNo",
+    "type": "css"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "avciKaydetBtn",
+    "value": "//button[contains(., 'Kaydet')]",
+    "type": "xpath"
+  },
+  {
+    "key": "avciMeslekTip",
+    "value": "#_Avci_MeslekTipId",
+    "type": "css"
+  },
+  {
+    "key": "agYoneticisi",
+    "value": "//li[contains(., 'Ağ yöneticisi')]",
+    "type": "xpath"
+  },
+  {
+    "key": "avciKanGrubuTip",
+    "value": "#_Avci_KanGrubuTipId",
+    "type": "css"
+  },
+  {
+    "key": "aRhPKanGrubu",
+    "value": "//li[contains(., 'A Rh(+)')]",
+    "type": "xpath"
+  },
+  {
+    "key": "avciEgitimTip",
+    "value": "#_Avci_EgitimTipId",
+    "type": "css"
+  },
+  {
+    "key": "yuksekLisans",
+    "value": "//li[contains(., 'Yüksek Lisans')]",
+    "type": "xpath"
+  },
+  {
+    "key": "avciIlceList",
+    "value": "#_Avci_IlceId",
+    "type": "css"
+  },
+  {
+    "key": "beypazariSecim",
+    "value": "//li[contains(., 'BEYPAZARI')]",
+    "type": "xpath"
+  },
+  {
+    "key": "avciVizeBilgileri",
+    "value": "a[href='#tabAvciVizeBilgileri']",
+    "type": "css"
+  },
+  {
+    "key": "vizeYenileBtn",
+    "value": "#vizeYenileButton",
+    "type": "css"
+  },
+  {
+    "key": "silahBilgileriTab",
+    "value": "a[href='#tabAvciSilahBilgileri']",
+    "type": "css"
+  },
+  {
+    "key": "yeniSilahBilgisiEkle",
+    "value": "//a[contains(., 'Yeni Silah Bilgisi Ekle')]",
+    "type": "xpath"
+  },
+  {
+    "key": "tasimaDurumTip",
+    "value": "#_AvciSilah_TasimaDurumTipId",
+    "type": "css"
+  },
+  {
+    "key": "silahRuhsati",
+    "value": "//li[contains(., 'Silah Ruhsatı')]",
+    "type": "xpath"
+  },
+  {
+    "key": "avciRuhsatSayi",
+    "value": "#AvciSilah_RuhsatSayi",
+    "type": "css"
+  },
+  {
+    "key": "avciRuhsatAlisTarihi",
+    "value": "#AvciSilah_RuhsatAlisTarihi",
+    "type": "css"
+  },
+  {
+    "key": "avciRuhsatBitisTarihi",
+    "value": "#AvciSilah_RuhsatBitisTarihi",
+    "type": "css"
+  },
+  {
+    "key": "ruhsatKaydetBtn",
+    "value": "button.btn-primary:has(i.fa-save)",
+    "type": "css"
+  },
+  {
+    "key": "harcBilgileriTab",
+    "value": "a[href='#tabAvciHarcBilgileri']",
+    "type": "css"
+  },
+  {
+    "key": "avciHarcEkle",
+    "value": "a.btn[href*='/AvciHarc/Ekle']",
+    "type": "css"
+  },
+  {
+    "key": "avciHarcSorgulaBtn",
+    "value": "//button[contains(., 'Avcının harç bilgisini sorgula')]",
+    "type": "xpath"
+  },
+  {
+    "key": "avciHarcKaydetBtn",
+    "value": "//button[@type='submit' and contains(., 'Kaydet')]",
+    "type": "xpath"
+  },
+  {
+    "key": "avciHarcGeriBtn",
+    "value": "//a[contains(., 'Geri')]",
+    "type": "xpath"
+  },
+  {
+    "key": "sertifikaBilgileriTab",
+    "value": "a[href='#tabAvciSertifikaBilgileri']",
+    "type": "css"
+  },
+  {
+    "key": "sertifikaBilgileriEkleBtn",
+    "value": "a.modalizer[href*='/AvciSertifika/Ekle']",
+    "type": "css"
+  },
+  {
+    "key": "sertifikaBilgileriAlinanYer",
+    "value": "#_AvciSertifika_AlindigiYerTipId",
+    "type": "css"
+  },
+  {
+    "key": "sertifikaBilgileriYurtici",
+    "value": "//li[contains(., 'Yurtiçi')]",
+    "type": "xpath"
+  },
+  {
+    "key": "sertifikaBilgileriKurumAdi",
+    "value": "#AvciSertifika_AlindigiKurumAdi",
+    "type": "css"
+  },
+  {
+    "key": "sertifikaBilgileriSayi",
+    "value": "#AvciSertifika_Sayi",
+    "type": "css"
+  },
+  {
+    "key": "sertifikaBilgileriTarih",
+    "value": "#AvciSertifika_AlinmaTarihi",
+    "type": "css"
+  },
+  {
+    "key": "sertifikaBilgileriKaydetBtn",
+    "value": "//button[contains(., 'Kaydet')]",
+    "type": "xpath"
+  },
+  {
+    "key": "ilSubePulSatis",
+    "value": "//a[contains(., 'İl Şube Pul Satış İşlemleri')]",
+    "type": "xpath"
+  },
+  {
+    "key": "avciPulSatisBtn",
+    "value": "//a[@href='/IlPulSatis/AvciSorgula']",
+    "type": "xpath"
+  },
+  {
+    "key": "avciPulSatisTcnoInput",
+    "value": "#TcKimlikNo",
+    "type": "css"
+  },
+  {
+    "key": "avciPulSatisAraBtn",
+    "value": "button[type='submit']",
+    "type": "css"
   }
 
 ]
