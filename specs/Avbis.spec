@@ -5,7 +5,7 @@ Avbis Pul Satis
 ----------------
 tags:TC_001
 
-* "avbistest.tarimorman.gov.tr/Avlak/Index" adresine git
+* "https://avbistest.tarimorman.gov.tr/Avlak/Index" adresine git
 * "nurullah.gunes@testinium.com" ve "Testinium123" bilgileriyle giris yapilir
 * Avbis ekranı genel kontrolleri yapilir
 * Dernek Bayi pul satis islemleri sayfasina ilerlenir
@@ -18,7 +18,7 @@ Avbis Avci Vizeleme
 ----------------
 tags:TC_002
 
-* "avbistest.tarimorman.gov.tr/Avlak/Index" adresine git
+* "https://avbistest.tarimorman.gov.tr/Avlak/Index" adresine git
 * "nurullah.gunes@testinium.com" ve "Testinium123" bilgileriyle giris yapilir
 * Avbis ekranı genel kontrolleri yapilir
 * idare Avci Islemleri sayfasina ilerlenir
