@@ -77,18 +77,24 @@ public class BaseTest {
 
             } else {
                 logger.info("************************************   Testiniumda test ayağa kalkacak   ************************************");
-                driver = new ChromeDriver(chromeOptions());
                 ChromeOptions options = new ChromeOptions();
-                capabilities = DesiredCapabilities.chrome();
-                options.setExperimentalOption("w3c", false);
-                options.addArguments("disable-translate");
+                options.addArguments("--disable-translate");
                 options.addArguments("--disable-notifications");
+                options.setExperimentalOption("w3c", true);
+
                 Map<String, Object> prefs = new HashMap<>();
                 options.setExperimentalOption("prefs", prefs);
-                capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-                capabilities.setCapability("key", System.getenv("key"));
-                browserName = System.getenv("browser");
-                driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
+
+                String browser = System.getenv("browser");
+
+                options.setCapability("platformName", "WIN10"); // gerekiyorsa
+                options.setCapability("browserName", browser);
+
+                driver = new RemoteWebDriver(
+                        new URL("http://172.16.82.20:4444/wd/hub"),
+                        options
+                );
+
                 actions = new Actions(driver);
                 }
         } catch (MalformedURLException e) {
