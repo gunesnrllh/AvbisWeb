@@ -84,6 +84,7 @@ public class BaseTest {
 
                 Map<String, Object> prefs = new HashMap<>();
                 options.setExperimentalOption("prefs", prefs);
+                capabilities.setCapability("key", System.getenv("key"));
 
                 String browser = System.getenv("browser");
 
