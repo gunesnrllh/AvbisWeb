@@ -81,7 +81,6 @@ public class BaseTest {
                 options.addArguments("--disable-notifications");
                 options.addArguments("--start-maximized");
 
-                options.setCapability("platformName", "WIN10");
 
                 capabilities = new DesiredCapabilities();
                 capabilities.setBrowserName("Chrome");
