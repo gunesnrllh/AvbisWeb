@@ -78,10 +78,16 @@ public class BaseTest {
             } else {
                 logger.info("************************************   Testiniumda test ayağa kalkacak   ************************************");
                 ChromeOptions options = new ChromeOptions();
+
+                options.addArguments("--headless=new");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--disable-gpu");
+
                 options.addArguments("--disable-translate");
                 options.addArguments("--disable-notifications");
-                options.setExperimentalOption("w3c", true);
 
+                options.setExperimentalOption("w3c", true);
                 Map<String, Object> prefs = new HashMap<>();
                 options.setExperimentalOption("prefs", prefs);
                 capabilities.setCapability("key", System.getenv("key"));
