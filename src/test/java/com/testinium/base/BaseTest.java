@@ -77,16 +77,14 @@ public class BaseTest {
 
             } else {
                 logger.info("************************************   Testiniumda test ayağa kalkacak   ************************************");
-                    FirefoxOptions options = new FirefoxOptions();
-                    capabilities = DesiredCapabilities.firefox();
+                ChromeOptions options = new ChromeOptions();
+                capabilities = DesiredCapabilities.chrome();
                     Map<String, Object> prefs = new HashMap<>();
                     prefs.put("profile.default_content_setting_values.notifications", 2);
                     options.addArguments("--kiosk");
                     options.addArguments("--disable-notifications");
                     options.addArguments("--start-fullscreen");
-
-
-                capabilities.setCapability("prefs", prefs);
+                    capabilities.setCapability("prefs", prefs);
                     FirefoxProfile profile = new FirefoxProfile();
                     capabilities.setCapability(FirefoxDriver.PROFILE, profile);
                     capabilities.setCapability("marionette", true);
