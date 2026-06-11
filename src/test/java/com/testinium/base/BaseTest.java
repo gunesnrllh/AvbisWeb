@@ -81,7 +81,7 @@ public class BaseTest {
                 options.addArguments("--disable-notifications");
                 options.addArguments("--start-maximized");
 
-                options.setCapability("platformName", "Windows 10");
+                options.setCapability("platformName", "WIN10");
 
                 capabilities = new DesiredCapabilities();
                 capabilities.setBrowserName("Chrome");
@@ -151,7 +151,7 @@ public class BaseTest {
         chromeOptions.addArguments("--disable-notifications");
         chromeOptions.addArguments("--start-fullscreen");
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-        chromeOptions.merge(capabilities);
+        //chromeOptions.merge(capabilities);
         return chromeOptions;
 
     }
