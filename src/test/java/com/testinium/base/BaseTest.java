@@ -100,6 +100,7 @@ public class BaseTest {
         driver.quit();
     }
 
+
     public void initMap(File[] fileList) {
         Type elementType = new TypeToken<List<ElementInfo>>() {
         }.getType();
