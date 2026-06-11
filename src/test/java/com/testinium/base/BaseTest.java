@@ -77,6 +77,7 @@ public class BaseTest {
 
             } else {
                 logger.info("************************************   Testiniumda test ayağa kalkacak   ************************************");
+                driver = new ChromeDriver(chromeOptions());
                 ChromeOptions options = new ChromeOptions();
                 capabilities = DesiredCapabilities.chrome();
                 options.setExperimentalOption("w3c", false);
