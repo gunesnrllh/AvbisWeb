@@ -78,16 +78,19 @@ public class BaseTest {
             } else {
                 logger.info("************************************   Testiniumda test ayağa kalkacak   ************************************");
                 ChromeOptions options = new ChromeOptions();
+                capabilities = DesiredCapabilities.chrome();
+                options.setExperimentalOption("w3c", false);
+                options.addArguments("disable-translate");
                 options.addArguments("--disable-notifications");
-                options.addArguments("--start-maximized");
-
-
-                capabilities = new DesiredCapabilities();
-                capabilities.setBrowserName("Chrome");
+                options.addArguments("--start-fullscreen");
+                Map<String, Object> prefs = new HashMap<>();
+                options.setExperimentalOption("prefs", prefs);
                 capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-                capabilities.setCapability("key", System.getenv("key"));
-
+                capabilities.setCapability("key", System.getProperty("key"));
+                browserName = System.getenv("browser");
                 driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
+                actions = new Actions(driver);
+
                 }
         } catch (MalformedURLException e) {
             e.printStackTrace();
