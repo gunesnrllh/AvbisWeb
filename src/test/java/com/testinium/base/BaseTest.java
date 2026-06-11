@@ -47,8 +47,8 @@ public class BaseTest {
     ChromeOptions chromeOptions;
     FirefoxOptions firefoxOptions;
 
-    String browserName = "chrome";
-    String selectPlatform = "win";
+    String browserName = "Chrome";
+    String selectPlatform = "Win";
 
     private static final String DEFAULT_DIRECTORY_PATH = "elementValues";
     ConcurrentMap<String, Object> elementMapList = new ConcurrentHashMap<>();
@@ -78,17 +78,17 @@ public class BaseTest {
             } else {
                 logger.info("************************************   Testiniumda test ayağa kalkacak   ************************************");
                 ChromeOptions options = new ChromeOptions();
-                capabilities = DesiredCapabilities.chrome();
-                options.setExperimentalOption("w3c", false);
-                options.addArguments("disable-translate");
                 options.addArguments("--disable-notifications");
-                Map<String, Object> prefs = new HashMap<>();
-                options.setExperimentalOption("prefs", prefs);
+                options.addArguments("--start-maximized");
+
+                options.setCapability("platformName", "Windows 10");
+
+                capabilities = new DesiredCapabilities();
+                capabilities.setBrowserName("Chrome");
                 capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                 capabilities.setCapability("key", System.getenv("key"));
-                browserName = System.getenv("browser");
+
                 driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
-                actions = new Actions(driver);
                 }
         } catch (MalformedURLException e) {
             e.printStackTrace();
