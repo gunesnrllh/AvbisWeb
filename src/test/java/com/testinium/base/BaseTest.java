@@ -88,6 +88,8 @@ public class BaseTest {
                 options.setExperimentalOption("prefs", prefs);
                 capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                 capabilities.setCapability("key", System.getProperty("key"));
+                logger.info("KEY => {}", System.getProperty("key"));
+
                 browserName = System.getenv("browser");
                 driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
                 actions = new Actions(driver);
