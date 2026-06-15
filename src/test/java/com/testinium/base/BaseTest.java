@@ -47,8 +47,8 @@ public class BaseTest {
     ChromeOptions chromeOptions;
     FirefoxOptions firefoxOptions;
 
-    String browserName = "Chrome";
-    String selectPlatform = "Win";
+    String browserName = "chrome";
+    String selectPlatform = "win";
 
     private static final String DEFAULT_DIRECTORY_PATH = "elementValues";
     ConcurrentMap<String, Object> elementMapList = new ConcurrentHashMap<>();
@@ -77,24 +77,22 @@ public class BaseTest {
 
             } else {
                 logger.info("************************************   Testiniumda test ayağa kalkacak   ************************************");
-
-                ChromeOptions options = new ChromeOptions();
-                capabilities = DesiredCapabilities.chrome();
-                options.setExperimentalOption("w3c", false);
-                options.addArguments("disable-translate");
+                FirefoxOptions options = new FirefoxOptions();
+                capabilities = DesiredCapabilities.firefox();
+                Map<String, Object> prefs = new HashMap<>();
+                prefs.put("profile.default_content_setting_values.notifications", 2);
+                options.addArguments("--kiosk");
                 options.addArguments("--disable-notifications");
                 options.addArguments("--start-fullscreen");
-                Map<String, Object> prefs = new HashMap<>();
-                options.setExperimentalOption("prefs", prefs);
-                capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-                capabilities.setCapability("key","testinium:0f8553472fedc6291c66ca8c58572509#38-8-5");
-                logger.info("KEY => {}", System.getProperty("key"));
-                browserName = System.getenv("browser");
-                driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
-                actions = new Actions(driver);
-                logger.info("KEY => {}", System.getProperty("key"));
+                capabilities.setCapability("prefs", prefs);
+                FirefoxProfile profile = new FirefoxProfile();
+                capabilities.setCapability(FirefoxDriver.PROFILE, profile);
+                capabilities.setCapability("marionette", true);
+                capabilities.setCapability("key", System.getenv("key"));
 
-                }
+                driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
+                driver.manage().window().maximize();
+            }
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
@@ -104,7 +102,6 @@ public class BaseTest {
     public void tearDown() {
         driver.quit();
     }
-
 
     public void initMap(File[] fileList) {
         Type elementType = new TypeToken<List<ElementInfo>>() {
@@ -155,8 +152,8 @@ public class BaseTest {
         //chromeOptions.addArguments("--kiosk");
         chromeOptions.addArguments("--disable-notifications");
         chromeOptions.addArguments("--start-fullscreen");
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-        //chromeOptions.merge(capabilities);
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+        chromeOptions.merge(capabilities);
         return chromeOptions;
 
     }
