@@ -91,6 +91,7 @@ public class BaseTest {
                 browserName = System.getenv("browser");
                 driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
                 actions = new Actions(driver);
+                logger.info("KEY => {}", System.getProperty("key"));
 
                 }
         } catch (MalformedURLException e) {
