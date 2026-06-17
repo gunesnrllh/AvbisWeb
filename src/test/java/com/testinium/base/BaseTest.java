@@ -79,6 +79,12 @@ public class BaseTest {
                 logger.info("************************************   Testiniumda test ayağa kalkacak   ************************************");
                 System.out.println("System.getenv(\"key\") = " + System.getenv("key"));
                 System.out.println("System.getProperty(\"key\") = " + System.getProperty("key"));
+                System.out.println("ENV key = " + System.getenv("key"));
+                System.out.println("ENV browser = " + System.getenv("browser"));
+                System.out.println("ENV platform = " + System.getenv("platform"));
+                System.out.println("ENV version = " + System.getenv("version"));
+                System.out.println("Capabilities = " + capabilities);
+
                 ChromeOptions options = new ChromeOptions();
                 capabilities = DesiredCapabilities.chrome();
                 Map<String, Object> prefs = new HashMap<>();
