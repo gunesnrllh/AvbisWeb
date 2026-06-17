@@ -87,8 +87,6 @@ public class BaseTest {
                 options.addArguments("--disable-notifications");
                 options.addArguments("--start-fullscreen");
                 capabilities.setCapability("prefs", prefs);
-                FirefoxProfile profile = new FirefoxProfile();
-                capabilities.setCapability(FirefoxDriver.PROFILE, profile);
                 capabilities.setCapability("marionette", true);
                 capabilities.setCapability("key", System.getenv("key"));
                 System.out.println("System.getenv(\"key\") = " + System.getenv("key"));
