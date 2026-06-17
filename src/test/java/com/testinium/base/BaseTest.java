@@ -77,8 +77,8 @@ public class BaseTest {
 
             } else {
                 logger.info("************************************   Testiniumda test ayağa kalkacak   ************************************");
-
-
+                String platform = System.getenv("platform");
+                String browser = System.getenv("browser");
                 ChromeOptions options = new ChromeOptions();
                 capabilities = DesiredCapabilities.chrome();
                 Map<String, Object> prefs = new HashMap<>();
@@ -86,11 +86,10 @@ public class BaseTest {
                 options.addArguments("--kiosk");
                 options.addArguments("--disable-notifications");
                 options.addArguments("--start-fullscreen");
-                capabilities.setCapability("browserName", "Chrome");
-                capabilities.setCapability("platform", "WIN10");
-                capabilities.setCapability("version", "LATEST");
+                capabilities.setCapability("browserName", browser);
+                capabilities.setCapability("platform", platform);
+                //capabilities.setCapability("version", "LATEST");
                 capabilities.setCapability("prefs", prefs);
-                capabilities.setCapability("marionette", true);
                 capabilities.setCapability("key", System.getenv("key"));
                 System.out.println("System.getenv(\"key\") = " + System.getenv("key"));
                 System.out.println("System.getProperty(\"key\") = " + System.getProperty("key"));
@@ -99,8 +98,6 @@ public class BaseTest {
                 System.out.println("ENV platform = " + System.getenv("platform"));
                 System.out.println("ENV version = " + System.getenv("version"));
                 System.out.println("Capabilities = " + capabilities);
-
-
 
                 driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
                 driver.manage().window().maximize();
