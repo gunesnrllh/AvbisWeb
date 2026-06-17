@@ -91,7 +91,8 @@ public class BaseTest {
                 capabilities.setCapability(FirefoxDriver.PROFILE, profile);
                 capabilities.setCapability("marionette", true);
                 capabilities.setCapability("key", System.getenv("key"));
-
+                System.out.println("System.getenv(\"key\") = " + System.getenv("key"));
+                System.out.println("System.getProperty(\"key\") = " + System.getProperty("key"));
                 driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
                 driver.manage().window().maximize();
             }
