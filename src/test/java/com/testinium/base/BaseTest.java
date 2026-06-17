@@ -141,6 +141,11 @@ public class BaseTest {
      */
     public ChromeOptions chromeOptions() {
         chromeOptions = new ChromeOptions();
+        System.out.println("ENV key = " + System.getenv("key"));
+        System.out.println("ENV browser = " + System.getenv("browser"));
+        System.out.println("ENV platform = " + System.getenv("platform"));
+        System.out.println("ENV version = " + System.getenv("version"));
+        System.out.println("Capabilities = " + capabilities);
 
         capabilities = DesiredCapabilities.chrome();
         Map<String, Object> prefs = new HashMap<String, Object>();
