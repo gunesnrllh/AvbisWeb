@@ -97,6 +97,8 @@ public class BaseTest {
                 capabilities.setCapability("key", System.getenv("key"));
                 System.out.println("System.getenv(\"key\") = " + System.getenv("key"));
                 System.out.println("System.getProperty(\"key\") = " + System.getProperty("key"));
+                System.out.println("Capabilities = " + capabilities);
+
                 driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
                 driver.manage().window().maximize();
             }
