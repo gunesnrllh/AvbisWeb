@@ -95,6 +95,9 @@ public class BaseTest {
                 options.addArguments("--kiosk");
                 options.addArguments("--disable-notifications");
                 options.addArguments("--start-fullscreen");
+                capabilities.setCapability("browserName", "chrome");
+                capabilities.setCapability("platform", "WIN10");
+                capabilities.setCapability("version", "LATEST");
                 capabilities.setCapability("prefs", prefs);
                 capabilities.setCapability("marionette", true);
                 capabilities.setCapability("key", System.getenv("key"));
