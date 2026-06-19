@@ -77,8 +77,6 @@ public class BaseTest {
 
             } else {
                 logger.info("************************************   Testiniumda test ayağa kalkacak   ************************************");
-                String platform = System.getenv("platform");
-                String browser = System.getenv("browser");
                 ChromeOptions options = new ChromeOptions();
                 capabilities = DesiredCapabilities.chrome();
                 Map<String, Object> prefs = new HashMap<>();
@@ -86,8 +84,6 @@ public class BaseTest {
                 options.addArguments("--kiosk");
                 options.addArguments("--disable-notifications");
                 options.addArguments("--start-fullscreen");
-                capabilities.setCapability("browserName", browser);
-                capabilities.setCapability("platform", platform);
                 //capabilities.setCapability("version", "LATEST");
                 capabilities.setCapability("prefs", prefs);
                 capabilities.setCapability("key", System.getenv("key"));
