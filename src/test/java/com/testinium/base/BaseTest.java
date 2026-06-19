@@ -79,24 +79,15 @@ public class BaseTest {
                 logger.info("************************************   Testiniumda test ayağa kalkacak   ************************************");
                 ChromeOptions options = new ChromeOptions();
                 capabilities = DesiredCapabilities.chrome();
-                Map<String, Object> prefs = new HashMap<>();
-                prefs.put("profile.default_content_setting_values.notifications", 2);
-                options.addArguments("--kiosk");
+                options.setExperimentalOption("w3c", false);
+                options.addArguments("disable-translate");
                 options.addArguments("--disable-notifications");
-                options.addArguments("--start-fullscreen");
-                //capabilities.setCapability("version", "LATEST");
-                capabilities.setCapability("prefs", prefs);
+                Map<String, Object> prefs = new HashMap<>();
+                options.setExperimentalOption("prefs", prefs);
+                capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                 capabilities.setCapability("key", System.getenv("key"));
-                System.out.println("System.getenv(\"key\") = " + System.getenv("key"));
-                System.out.println("System.getProperty(\"key\") = " + System.getProperty("key"));
-                System.out.println("ENV key = " + System.getenv("key"));
-                System.out.println("ENV browser = " + System.getenv("browser"));
-                System.out.println("ENV platform = " + System.getenv("platform"));
-                System.out.println("ENV version = " + System.getenv("version"));
-                System.out.println("Capabilities = " + capabilities);
-
+                browserName = System.getenv("browser");
                 driver = new RemoteWebDriver(new URL("http://172.16.82.20:4444/wd/hub"), capabilities);
-                driver.manage().window().maximize();
             }
         } catch (MalformedURLException e) {
             e.printStackTrace();
