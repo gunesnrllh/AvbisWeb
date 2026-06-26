@@ -14,6 +14,19 @@ tags:TC_001
 * Toplam tutar kontrol edilirek kaydedilir
 * Pul satisinin basari ile tamamlandigi goruntulenir
 
+Avbis Pul Satis Ayni Seri No Hata Kontrol
+----------------
+tags:TC_004
+
+* "https://avbistest.tarimorman.gov.tr/Avlak/Index" adresine git
+* "nurullah.gunes@testinium.com" ve "Testinium123" bilgileriyle giris yapilir
+* Avbis ekranı genel kontrolleri yapilir
+* Dernek Bayi pul satis islemleri sayfasina ilerlenir
+* Yeni pul satis penceresinde dernek secimi yapilir
+* Pul seri no araligi "4732" ve "4733" doldurulur
+* Toplam tutar kontrol edilirek kaydedilir
+* Pul satisi ayni seri no hata mesaji goruntulenir
+
 Avbis Avci Vizeleme
 ----------------
 tags:TC_002

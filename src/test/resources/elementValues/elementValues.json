@@ -80,6 +80,11 @@
     "type": "xpath"
   },
   {
+    "key": "pulSatisAyniSeriNoHatasi",
+    "value": "//div[@class='bootbox-body' and contains(., 'zaten yapılmıştır')]",
+    "type": "xpath"
+  },
+  {
     "key": "idareAvciIslemleri",
     "value": "//span[text()='İdare Avcı İşlemleri']",
     "type": "xpath"

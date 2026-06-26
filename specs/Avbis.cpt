@@ -42,6 +42,9 @@ This is a concept file with following syntax for each concept.
 # Pul satisinin basari ile tamamlandigi goruntulenir
 * "pulSatisBasarili" elementini kontrol et
 
+# Pul satisi ayni seri no hata mesaji goruntulenir
+* "pulSatisAyniSeriNoHatasi" elementini kontrol et
+
 
 # idare Avci Islemleri sayfasina ilerlenir
 * "idareAvciIslemleri" elementine tikla
