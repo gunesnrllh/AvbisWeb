@@ -10,6 +10,17 @@ This is a concept file with following syntax for each concept.
 * "anasayfaLogo" elementini kontrol et
 * "anasayfaUserName" elementini kontrol et
 
+# Anasayfa element kontrolleri yapilir
+* "anasayfaLogo" elementini kontrol et
+* "anasayfaTestModu" elementini kontrol et
+* "anasayfaKurumBilgisi" elementini kontrol et
+* "anasayfaUserName" elementini kontrol et
+* "anasayfaMenuArama" elementini kontrol et
+* "anasayfaAvlakIslemleriMenu" elementini kontrol et
+* "anasayfaIdareAvciIslemleriMenu" elementini kontrol et
+* "anasayfaPulSatisIslemleriMenu" elementini kontrol et
+* "anasayfaCezaBilgilendirmeBaslik" elementini kontrol et
+
 # Dernek Bayi pul satis islemleri sayfasina ilerlenir
 * "pulSatisIslemleriBar" elementine tikla
 * "dernekBayiPulSatisBar" elementine tikla
@@ -86,7 +97,7 @@ This is a concept file with following syntax for each concept.
 * "sertifikaBilgileriAlinanYer" elementine tikla
 * "sertifikaBilgileriYurtici" elementine tikla
 * "testinium1" textini "sertifikaBilgileriKurumAdi" elemente yaz
-* "116" textini "sertifikaBilgileriSayi" elemente yaz
+* "117" textini "sertifikaBilgileriSayi" elemente yaz
 * "02.06.2026" textini "sertifikaBilgileriTarih" elemente yaz
 * "sertifikaBilgileriKaydetBtn" elementine tikla
 
