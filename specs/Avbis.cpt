@@ -101,7 +101,7 @@ This is a concept file with following syntax for each concept.
 * "sertifikaBilgileriAlinanYer" elementine tikla
 * "sertifikaBilgileriYurtici" elementine tikla
 * "testinium1" textini "sertifikaBilgileriKurumAdi" elemente yaz
-* "120" textini "sertifikaBilgileriSayi" elemente yaz
+* "121" textini "sertifikaBilgileriSayi" elemente yaz
 * "02.06.2026" textini "sertifikaBilgileriTarih" elemente yaz
 * "sertifikaBilgileriKaydetBtn" elementine tikla
 
