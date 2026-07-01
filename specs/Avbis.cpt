@@ -76,6 +76,7 @@ This is a concept file with following syntax for each concept.
 # Vize bilgileri kontrol edilir
 * "avciVizeBilgileri" elementine tikla
 * "vizeYenileBtn" elementine tikla
+* "3" saniye bekle
 
 # Silah ruhsat bilgisi eklenir
 * "silahBilgileriTab" elementine tikla
