@@ -80,6 +80,11 @@
     "type": "xpath"
   },
   {
+    "key": "pulSatisAyniSeriNoHatasi",
+    "value": "//div[@class='bootbox-body' and contains(., 'zaten yapılmıştır')]",
+    "type": "xpath"
+  },
+  {
     "key": "idareAvciIslemleri",
     "value": "//span[text()='İdare Avcı İşlemleri']",
     "type": "xpath"
@@ -303,6 +308,41 @@
     "key": "avciPulSatisAraBtn",
     "value": "button[type='submit']",
     "type": "css"
+  },
+  {
+    "key": "anasayfaTestModu",
+    "value": "//b[normalize-space()='TEST MODU']",
+    "type": "xpath"
+  },
+  {
+    "key": "anasayfaKurumBilgisi",
+    "value": "//li[@id='header_task_bar_bbbb']//span[contains(., 'Ankara İl Şube Müdürlüğü')]",
+    "type": "xpath"
+  },
+  {
+    "key": "anasayfaMenuArama",
+    "value": "#search",
+    "type": "css"
+  },
+  {
+    "key": "anasayfaAvlakIslemleriMenu",
+    "value": "//span[normalize-space()='Avlak İşlemleri']",
+    "type": "xpath"
+  },
+  {
+    "key": "anasayfaIdareAvciIslemleriMenu",
+    "value": "//span[normalize-space()='İdare Avcı İşlemleri']",
+    "type": "xpath"
+  },
+  {
+    "key": "anasayfaPulSatisIslemleriMenu",
+    "value": "//span[normalize-space()='Pul Satış İşlemleri']",
+    "type": "xpath"
+  },
+  {
+    "key": "anasayfaCezaBilgilendirmeBaslik",
+    "value": "//span[contains(@class, 'caption-subject') and normalize-space()='CEZA BİLGİLENDİRME']",
+    "type": "xpath"
   }
 
 ]

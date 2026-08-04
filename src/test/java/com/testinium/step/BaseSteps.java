@@ -321,6 +321,47 @@ public class BaseSteps extends BaseTest {
             logger.info(text + " text " + key + "  text written to element.");
         }
     }
+
+    @Step("Data.csv dosyasindaki bilgiler ile sorgulama yapilir")
+    public void sorgulamaBilgileriniCsvdenOku() {
+        String[][] csvData = CsvReaderUtil.readCSV("src/test/resources/data.csv");
+
+        if (csvData == null || csvData.length < 2) {
+            Assertions.fail("data.csv dosyasinda sorgulama yapilacak veri bulunamadi.");
+        }
+
+        int tcNoIndex = getCsvColumnIndex(csvData[0], "tcNo");
+        int dogumTarihiIndex = getCsvColumnIndex(csvData[0], "dogumTarihi");
+        String[] row = csvData[1];
+
+        if (row.length <= Math.max(tcNoIndex, dogumTarihiIndex)) {
+            Assertions.fail("data.csv ilk veri satirinda tcNo veya dogumTarihi eksik.");
+        }
+
+        String tcNo = row[tcNoIndex].trim();
+        String dogumTarihi = row[dogumTarihiIndex].trim();
+
+        if (tcNo.isEmpty() || dogumTarihi.isEmpty()) {
+            Assertions.fail("data.csv ilk veri satirinda tcNo veya dogumTarihi bos.");
+        }
+
+        logger.info("CSV ilk veri satiri ile sorgulama yapiliyor. tcNo: " + tcNo + ", dogumTarihi: " + dogumTarihi);
+        ssendKeys(tcNo, "avciTcNoInput");
+        ssendKeys(dogumTarihi, "avciDogumTarihiInput");
+        clickElementMethod("avciSorgulaBtn");
+    }
+
+    private int getCsvColumnIndex(String[] headers, String columnName) {
+        for (int i = 0; i < headers.length; i++) {
+            if (columnName.equals(headers[i].trim())) {
+                return i;
+            }
+        }
+
+        Assertions.fail("data.csv dosyasinda '" + columnName + "' kolonu bulunamadi.");
+        return -1;
+    }
+
     @Step({"Check if current URL contains the value <expectedURL>", "Şuanki URL <url> değerini içeriyor mu kontrol et"})
     public void checkURLContainsRepeat(String expectedURL) {
         waitBySeconds(2);
