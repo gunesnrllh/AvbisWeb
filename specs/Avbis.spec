@@ -10,7 +10,7 @@ tags:TC_001
 * Avbis ekranı genel kontrolleri yapilir
 * Dernek Bayi pul satis islemleri sayfasina ilerlenir
 * Yeni pul satis penceresinde dernek secimi yapilir
-* Pul seri no araligi "4737" ve "4738" doldurulur
+* Pul seri no araligi "4738" ve "4739" doldurulur
 * Toplam tutar kontrol edilirek kaydedilir
 * Pul satisinin basari ile tamamlandigi goruntulenir
 
